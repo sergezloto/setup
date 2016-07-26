@@ -1,0 +1,28 @@
+[user]
+email = <your email>
+name = <your name>
+[color]
+  branch = auto
+  status = auto
+  diff = auto
+[alias]
+  ci = commit
+  co = checkout
+  st = status -sb
+  br = branch
+  di = diff
+  ff = merge --ff-only
+  vimdiff = difftool -y -t vimdiff
+  lg = log --graph
+[pager]
+  status = on
+[push]
+  default = upstream
+[merge]
+  defaulttoupstream = true
+  conflictstyle = diff3 
+  log = true
+[log]
+  decorate = true
+[branch]
+  autosetuprebase = always
