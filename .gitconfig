@@ -13,7 +13,7 @@ name = <your name>
   di = diff
   ff = merge --ff-only
   vimdiff = difftool -y -t vimdiff
-  lg = log --graph
+  lg = log --graph --oneline
 [pager]
   status = on
 [push]
