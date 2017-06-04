@@ -15,6 +15,7 @@
 (setq typescript-indent-level 2)
 
 ;; programming modes defaults
+(setq whitespace-line-column 160)
 (setq whitespace-style `(face tabs spaces trailing lines space-before-tab indentation empty space-after-tab))
 ;; orig is face tabs spaces trailing lines space-before-tab newline indentation empty space-after-tab space-mark tab-mark newline-mark
 
