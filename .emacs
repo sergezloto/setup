@@ -7,6 +7,9 @@
 ;; scroll line by line
 ;;(setq scroll-conservatively 1)
 
+;; scroll compilation output
+(setq compilation-scroll-output `first-error)
+
 ;; No tabs
 (setq-default indent-tabs-mode nil)
 
