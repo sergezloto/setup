@@ -18,8 +18,14 @@
 (setq typescript-indent-level 2)
 
 ;; programming modes defaults
+(setq show-paren-delay 0)
+(setq show-paren-style 'mixed) ; 'parenthesis / 'expression
+(setq blink-matching-paren t)
+(setq blink-matching-delay 1)
+(show-paren-mode nil)
+
 (setq whitespace-line-column 160)
-(setq whitespace-style `(face tabs spaces trailing lines space-before-tab indentation empty space-after-tab))
+(setq whitespace-style `(tabs spaces trailing lines space-before-tab indentation empty space-after-tab))
 ;; orig is face tabs spaces trailing lines space-before-tab newline indentation empty space-after-tab space-mark tab-mark newline-mark
 
 ;; I like these when programming
