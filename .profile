@@ -2,6 +2,7 @@
 if [ -d /Applications/Aquamacs.app/ ]
 then
   EMACSCLIENT=/Applications/Aquamacs.app/Contents/MacOS/bin/emacsclient
-  alias -x emacsclient=$EMACSCLIENT
+  alias emacsclient=$EMACSCLIENT
+  declare -x emacsclient
   export EDITOR=$EMACSCLIENT
 fi
