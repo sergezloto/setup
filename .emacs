@@ -28,6 +28,24 @@
 (setq whitespace-style `(tabs spaces trailing lines space-before-tab indentation empty space-after-tab))
 ;; orig is face tabs spaces trailing lines space-before-tab newline indentation empty space-after-tab space-mark tab-mark newline-mark
 
+;; Prettify symbols                                                                                                                           
+(defun add-pretty-symbols ()
+  (setq prettify-symbols-alist
+        '(
+          ("lambda" . 955) ; λ                                                                                                                
+          ("->" . 8594)    ; →                                                                                                                
+          ("=>" . 8658)    ; ⇒                                                                                                                
+          ("map" . 8614)   ; ↦                                                                                                                
+          ("==" . 10869)    ; ⩵                                                                                                               
+          ("!=" . 8800)    ; ≠                                                                                                                
+          ("<=" . 8804)    ; ≤                                                                                                                
+          (">=" . 8805)    ; ≥                                                                                                                
+          ("sqrt" . 8730)  ; √                                                                                                                
+          ("for" . 8704)   ; ∀                                                                                                                
+          ("in" . 8712)    ; ∈                                                                                                                
+          )))
+(global-prettify-symbols-mode 1)
+
 ;; I like these when programming
 (defun add-def-hooks (hook)
   (add-hook hook 'electric-pair-mode)
@@ -35,6 +53,8 @@
   (add-hook hook 'whitespace-mode)
   ;;(add-hook hook 'hs-minor-mode)
   (add-hook hook 'linum-mode)
+  (add-hook hook 'add-pretty-symbols)
+
   )
 (add-def-hooks 'prog-mode-hook)
 
