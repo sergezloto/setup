@@ -63,6 +63,9 @@
 
 (add-hook 'before-save-hook 'whitespace-cleanup)
 
+(add-hook 'yaml-mode-hook 'highlight-indent-guides-mode)
+
+
 ;; Listen to emacsclient
 (server-start)
 
